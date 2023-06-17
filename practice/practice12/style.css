@@ -16,7 +16,7 @@ img {
   width: 450px;
   height: 300px;
   margin: 10px;
-  transition: all 1s;
+  transition: all 1s; /* 서서히 1초동안 되게 하라 */
 }
 
 img:hover {
@@ -24,5 +24,8 @@ img:hover {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 

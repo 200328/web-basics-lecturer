@@ -11,13 +11,13 @@
 }
 
 #box-group2 #box2{
-
+  float: right;
 }
 
 #box-group3 #box2{
-
+  position: static;
 }
 
 #box-group4 .box{
-
+  display: block;
 }

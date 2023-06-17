@@ -3,10 +3,14 @@ body {
   counter-reset: div_order;
 }
 
+p {
+  text-align: center; /* content 정렬 */
+}
+
 div {
   width: 150px;
   height: 150px;
-  margin: 0px auto;
+  margin: 0px auto; /* auto: 가운데 정렬 */
   padding: 5px;
   border: 3px solid #222;
   border-radius: 10px;
@@ -15,29 +19,42 @@ div {
 
 div.static {
   position: static;
-  left: 200px;
-  top: 20px;
+  /* left: 200px;
+  top: 20px; */ /* 안 넣어줘도 영향을 받지 않음 */
   background: white;
   margin-top: 5px;
 }
 
-div.relative {
+div.relative { /* 부모는 static으로 지정 */
   /* 코드 작성 */
+  position: relative;
+  left: 260px;
+  right: -90px; /* 핵심은 위치를 반드시 지정해줘야 한다 */
   background: RoyalBlue;
 }
 
 div.fixed {
   /* 코드 작성 */
+  position: fixed;
+  top: 0px;
+  left: 0px;
   background: IndianRed;
 }
 
 div.absolute {
   /* 코드 작성 */
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  bottom: 0px;
+  right: 0px;
   background: ForestGreen;
 }
 
 div.sticky {
   /* 코드 작성 */
+  position: sticky;
+  top: 10px;
   background: PaleGoldenRod;
 }
 

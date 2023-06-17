@@ -8,8 +8,28 @@
     <title>Practice</title>
 </head>
 <body>
-     <!-- 아래 코드를 작성하세요. -->
-    
+    <!-- 아래 코드를 작성하세요. -->
+    <div class="login-form">
+        <form action="" method="post"> <!-- 데이터 받기 위한 태그 -->
+            <div class="imgcontainer">
+                <img src="https://picsum.photos/200" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for = "uname"><b>Username</b></label>
+                <!-- label의 for 속성은 받고자 하는 input tag의 name이어야 한다. -->
+                <input type="text" placeholder="Enter Unsername" required name="uname">
+                <!-- required 속성은 꼭 들어가야 한다 -->
+                <label for = "psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required name="pwd">
+                <!-- placeholder는 기본적으로 띄워주는 화면 -->
+                <button type="submit">Login</button>
+                <!-- submit type의 역할은 이 content가 클릭되었을 때, form에서 받은 정보들을 서버로 보내주는 역할 -->
+            </div>
+        </div>
+    </div>
+
+</form>
+</div>
 
 </body>
 </html>
